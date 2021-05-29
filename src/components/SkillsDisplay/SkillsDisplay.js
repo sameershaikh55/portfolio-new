@@ -9,7 +9,7 @@ import materialUIImg from "./SkillsImages/materialUI.png";
 import ruby from "./SkillsImages/ruby.png";
 import jquery from "./SkillsImages/jquery.png";
 import mongo from "./SkillsImages/mongo.png";
-import cS from "./SkillsImages/c#.png";
+import cS from "./SkillsImages/cS.png";
 import cPlus from "./SkillsImages/c++.png";
 import express from "./SkillsImages/express.png";
 
@@ -55,7 +55,7 @@ const SkillsDisplay = () => {
     {
       img: ruby,
       alt: "ruby",
-      height: "3.2rem",
+      height: "5.2rem",
       // marginLeft: "40px",
     },
     {
@@ -67,25 +67,25 @@ const SkillsDisplay = () => {
     {
       img: mongo,
       alt: "mongo",
-      height: "13.2rem",
+      height: "6rem",
       // marginLeft: "40px",
     },
     {
       img: cS,
       alt: "cS",
-      height: "13.2rem",
+      height: "7rem",
       // marginLeft: "40px",
     },
     {
       img: cPlus,
       alt: "cPlus",
-      height: "13.2rem",
+      height: "6rem",
       // marginLeft: "40px",
     },
     {
       img: express,
       alt: "express",
-      height: "13.2rem",
+      height: "10rem",
       // marginLeft: "40px",
     },
   ];
