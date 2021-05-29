@@ -12,38 +12,38 @@ import Footer from "./components/Footer/Footer";
 import Loader from "./components/Loader";
 
 function App() {
-  const [loading, setLoading] = useState(false);
+	const [loading, setLoading] = useState(false);
 
-  useEffect(() => {
-    setLoading((prev) => !prev);
-    setTimeout(() => {
-      setLoading((prev) => !prev);
-    }, 2500);
-  }, []);
+	useEffect(() => {
+		setLoading((prev) => !prev);
+		setTimeout(() => {
+			setLoading((prev) => !prev);
+		}, 2500);
+	}, []);
 
-  if (loading) {
-    document.body.style.overflow = "hidden";
-  } else {
-    document.body.style.overflowY = "auto";
-  }
+	if (loading) {
+		document.body.style.overflow = "hidden";
+	} else {
+		document.body.style.overflowY = "auto";
+	}
 
-  return (
-    <>
-      {loading ? (
-        <Loader />
-      ) : (
-        <div>
-          <Navbar />
-          <Home />
-          <SkillsDisplay />
-          <Features />
-          <Experience />
-          <MyProjects />
-          <Footer />
-        </div>
-      )}
-    </>
-  );
+	return (
+		<>
+			{loading ? (
+				<Loader />
+			) : (
+				<div>
+					<Navbar />
+					<Home />
+					<SkillsDisplay />
+					<Features />
+					<Experience />
+					<MyProjects />
+					<Footer />
+				</div>
+			)}
+		</>
+	);
 }
 
 export default App;

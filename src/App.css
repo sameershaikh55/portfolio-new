@@ -371,9 +371,9 @@ h3 {
 }
 
 @media screen and (min-width: 702px) {
-.AboutUS h1 {
-	width: max-content;
-}
+	.AboutUS h1 {
+		width: max-content;
+	}
 }
 
 @-webkit-keyframes slide-in-blurred-top {

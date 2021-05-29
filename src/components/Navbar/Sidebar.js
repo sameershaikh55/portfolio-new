@@ -53,7 +53,7 @@ function Sidebar() {
 			<List>
 				<ImCross className="crossISidebar" style={{ fontSize: "4.5rem" }} />
 				<Link
-					activeClass="activeNav"
+					activeclassName="activeNav"
 					to="About"
 					smooth={true}
 					duration={ScrollDuration}
@@ -66,7 +66,7 @@ function Sidebar() {
 					</ListItem>
 				</Link>
 				<Link
-					activeClass="activeNav"
+					activeclassName="activeNav"
 					to="Experience"
 					smooth={true}
 					duration={ScrollDuration}
@@ -80,7 +80,7 @@ function Sidebar() {
 					</ListItem>
 				</Link>
 				<Link
-					activeClass="activeNav"
+					activeclassName="activeNav"
 					to="Projects"
 					smooth={true}
 					delay={ScrollDelay}
@@ -93,7 +93,7 @@ function Sidebar() {
 					</ListItem>
 				</Link>
 				<Link
-					activeClass="activeNav"
+					activeclassName="activeNav"
 					// to="Contact"
 					to="bottomFooter"
 					smooth={true}

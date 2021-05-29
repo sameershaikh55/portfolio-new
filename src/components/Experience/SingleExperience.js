@@ -17,7 +17,7 @@ const SingleExperience = ({
 	TextColor,
 }) => {
 	return (
-		<div class="col-lg-3 col-md-4 col-sm-6">
+		<div className="col-lg-3 col-md-4 col-sm-6">
 			<Flip left>
 				<Tilt className="Tilt" options={{ max: 25, scale: 1.03 }}>
 					<div

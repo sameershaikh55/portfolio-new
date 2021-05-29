@@ -24,7 +24,7 @@ const SingleProject = ({ Title, Image, Description, Url }) => {
 							<img src={Image} alt="" />
 							<div className="singlePContainerBody">
 								<h1> {Title} </h1>
-								<div class="wrapper">
+								<div className="wrapper">
 									<button onClick={handleClickOpen}>
 										<span>View More</span>
 									</button>
