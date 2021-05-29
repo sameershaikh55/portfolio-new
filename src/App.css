@@ -373,6 +373,8 @@ h3 {
 @media screen and (min-width: 702px) {
 	.AboutUS h1 {
 		width: max-content;
+		margin: auto;
+		margin-bottom: 2rem;
 	}
 }
 
@@ -905,6 +907,12 @@ h3 {
 	);
 
 	padding: 2.5rem 0rem;
+}
+
+.innerSingleExp h1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .singleExperience:hover {

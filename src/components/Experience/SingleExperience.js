@@ -1,23 +1,13 @@
 import React from "react";
 
-import { CircleProgress } from "react-gradient-progress";
-// import VisibilitySensor from "react-visibility-sensor";
-
 // COUNT UP PACKAGE
 import Tilt from "react-tilt";
 
 import Flip from "react-reveal/Flip";
 
-const SingleExperience = ({
-	Title,
-	Img,
-	Percentage,
-	GradientC_1,
-	GradientC_2,
-	TextColor,
-}) => {
+const SingleExperience = ({ Title, Img, GradientC_1, GradientC_2 }) => {
 	return (
-		<div className="col-lg-3 col-md-4 col-sm-6">
+		<div class="col-lg-3 col-md-4 col-sm-6">
 			<Flip left>
 				<Tilt className="Tilt" options={{ max: 25, scale: 1.03 }}>
 					<div
@@ -29,18 +19,15 @@ const SingleExperience = ({
 						<div className="innerSingleExp">
 							<h1>
 								{Title}&nbsp;
-								<img src={Img} alt="" />
+								<img
+									style={{
+										width: (Title === "Ruby " && "35%") || "",
+										height: (Title === "Ruby " && "38%") || "",
+									}}
+									src={Img}
+									alt=""
+								/>
 							</h1>
-							<CircleProgress
-								percentage={Percentage}
-								strokeWidth={12}
-								secondaryColor="#000"
-								primaryColor={[GradientC_1, GradientC_2]}
-								width={175}
-								fontColor={TextColor}
-								fontSize="2.7rem"
-								fill="#1c1c1c"
-							/>
 						</div>
 					</div>
 				</Tilt>
