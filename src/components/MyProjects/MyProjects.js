@@ -14,11 +14,12 @@ const MyProjects = () => {
 						</h2>
 					</div>
 					<div className="row sibling-fade">
-						{states.projects.map((prev) => {
+						{states.projects.map((prev, i) => {
 							const { title, img, description, url } = prev;
 							return (
 								<SingleProject
-									key={title}
+									key={i}
+									index={i}
 									Title={title}
 									Image={img}
 									Description={description}
